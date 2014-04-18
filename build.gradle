@@ -1,0 +1,23 @@
+allprojects {
+    ext.configDirectory = new File(rootDir, '/config')
+    ext.checkstyleDirectory = new File(configDirectory, '/checkstyle')
+    ext.findbugsDirectory = new File(configDirectory, '/findbugs')
+
+    group = 'com.rmd.personal.rentchecker'
+    version = '0.0.1'
+
+    apply plugin: 'checkstyle'
+    apply plugin: 'findbugs'
+
+    checkstyle {
+        configFile = new File(checkstyleDirectory, '/checkstyle.xml')
+    }
+
+    findbugs {
+        excludeFilter = new File(findbugsDirectory, '/findbugs-exclude.xml')
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}

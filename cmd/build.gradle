@@ -1,0 +1,12 @@
+apply plugin: 'java'
+
+dependencies {
+    compile project(':common')
+    compile("org.springframework:spring-webmvc:3.1.4.RELEASE")
+}
+
+jar {
+    baseName = 'rentchecker-cmd'
+    from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    manifest { attributes 'Main-Class': 'com.rmd.personal.rentchecker.cmd.Main' }
+}
