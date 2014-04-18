@@ -1,3 +1,7 @@
 include ':common',':cmd'
 
+if (!hasProperty('skipAndroid')) {
+    include ':android'
+}
+
 rootProject.name = 'rentchecker'
