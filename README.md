@@ -1,7 +1,7 @@
-rentchecker
+Rentchecker
 ===========
 
-Copyright © 2014, Robert Dimsdale. Licensed under [MIT License].
+Copyright © 2014, Robert Dimsdale. Licensed under [Apache v2 License].
 
 About
 -----
@@ -11,7 +11,9 @@ Requirements
 ------------
 
 Gradle >= 1.10
+
 Android SDK >= 7
+
 Jdk 1.7
 
 Usage
@@ -30,4 +32,4 @@ TODO
 
 Replace hard-coded username/password in Android app with data in preferences, and prompt if data is missing (e.g. first-time run).
 
- [MIT License]: https://github.com/robdimsdale/rentchecker/raw/master/LICENSE
+ [Apache v2 License]: https://github.com/robdimsdale/rentchecker/raw/master/LICENSE
